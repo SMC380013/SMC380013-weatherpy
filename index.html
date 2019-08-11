@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-secondary">
+    <section class="container">
+            <nav class="navbar navbar-expand-md navbar-light bg-light row">
+                    <div class="col-8"><a class="navbar-brand" href="./index.html">Latitude</a></div>
+                      <div class="col-4">
+                      <button class="navbar-toggler" type="button" data-toggle="collapse" 
+                      data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+                      aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                    
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+      
+                            <li class="nav-item dropdown active">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Plot
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <a class="dropdown-item" href="./Temperature/index.html">Temperature</a>
+                                  <a class="dropdown-item" href="./Humidity/index.html">Humidity</a>
+                                  <a class="dropdown-item" href="./Cloudiness/index.html">Cloudiness</a>
+                                  <a class="dropdown-item" href="./Wind%20Speed/index.html">Wind Speed</a>
+                                </div>
+                              </li>
+      
+      
+                          <li class="nav-item active">
+                            <a class="nav-link" href="./Comparison/index.html">Comparison <span class="sr-only">(current)</span></a>
+                          </li>
+                          <li class="nav-item active">
+                              <a class="nav-link" href="./Data Page/index.html">Data <span class="sr-only">(current)</span></a>
+                            </li>
+      
+                          
+                        </ul>
+                        
+                      </div>
+                    </div>
+                    </nav>
+        <div class="row">
+            <div class="col-md-8 bg-light">
+                    <!-- <div class="col-md-6 col-sm-8"> -->
+
+                <div class="container">
+                    <h1>Summary: Latitude vs. X</h1>
+                    <div class="row">
+
+                        <div class="col-md-4 col-sm-8">
+
+                            <article>
+                                <a href="images/temperaturemap.png" target="_blank">
+                                    <img src="images/temperaturemap.png" class="img-fluid" alt="Responsive image">
+                                </a>
+                                <p><em>Temperature Map</em></p>
+                            </article>
+
+                        </div>
+                        <div class="col-md-8 col-sm-8">
+
+                            <p>The purpose of this project was to analyze how weather changes as you get closer to the
+                                equator.
+                                To accomplish this analysis,we first pulled data from the OpenWeatherMap API to assemble
+                                a
+                                dataset on over 500 cities. After assembling the dataset, we used Matplotlib to plot
+                                various
+                                aspects of the weather vs latitude. Factors we looked at included humidity, temperature,
+                                cloudiness and wind speed. This site provides the source data and visualizations created
+                                as
+                                part
+                                of the analysis, as well as explanations and descriptions of any trends and correlations
+                                witnessed.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 bg-light">
+                <div class="container">
+
+                    <h2>Visualizations</h2>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-8">
+
+                            <article>
+                                <a href="../Temperature/index.html" target="_blank">
+                                    <img src="images/temperaturemap.png" class="img-fluid" alt="Responsive image">
+                                </a>
+                                <p><em>Temperature Map</em></p>
+                            </article>
+                        </div>
+
+                        <div class="col-md-6 col-sm-8">
+                            <article>
+                                <a href="../Humidity/index.html" target="_blank">
+                                    <img src="images/humiditymap.png" class="img-fluid" alt="Responsive image">
+                                    
+                                </a>
+                                <p><em>Humidity Map</em></p>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 col-sm-8">
+                            <article>
+                                <a href="../Cloudiness/index.html#" target="_blank">
+                                    <img src="images/cloudymap.png" class="img-fluid" alt="Responsive image">
+                                </a>
+                                <p><em>Cloudy Map</em></p>
+
+                            </article>
+                        </div>
+
+
+
+                        <div class="col-md-6 col-sm-8">
+                            <article>
+                                <a href="../Wind%20Speed/index.html" target="_blank">
+                                    <img src="images/windmap.png" class="img-fluid" alt="Responsive image">
+                                </a>
+                                <figcaption><em>Wind Map</em></figcaption>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
